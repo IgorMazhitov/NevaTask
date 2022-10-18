@@ -1,13 +1,16 @@
 import React from "react";
+import card from "../img/card.jpeg"
 
     const Card = (props) => {
+
+        const cardImg = require("../img/card.jpeg")
 
         return (
 
             <div class=" min-w-80 mx-5 my-10 bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
                 <div class="md:flex">
                 <div class="md:shrink-0">
-                    <img class="h-48 w-full object-cover md:h-full md:w-48" src="/img/building.jpg" alt="Modern building architecture"></img>
+                    <img class="h-48 w-full object-cover md:h-full md:w-48" src={cardImg} alt="Modern building architecture"></img>
                 </div>
                 <div class="p-8 h-auto">
                     <div class="tracking-wide text-xs text-slate-400 font-semibold">2 часа</div>
