@@ -10,7 +10,7 @@ import card from "../img/card.jpeg"
 
         return (
 
-            <div class=" min-w-80 mx-5 my-10 bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+            <div class=" min-w-80 mx-5 my-10 bg-white rounded-xl shadow-md hover:shadow-lg overflow-hidden md:max-w-2xl">
                 <div class="md:flex">
                 <div class="md:shrink-0 relative">
                     {opt && <div class="absolute top-12 left-0 w-32 h-10 flex justify-center items-center bg-yellow-300 rounded-r-lg test-lg"> {opt} </div>}
@@ -38,10 +38,10 @@ import card from "../img/card.jpeg"
                     <div class="text-sm w-full">
 
                         <ul class="box-border flex flex-row">
-                            <li class="w-1/4 flex justify-center items-center rounded-xl bg-blue-200 mx-1 text-xs h-6">12:00</li>
-                            <li class="w-1/4 flex justify-center items-center rounded-xl bg-blue-200 mx-1 text-xs h-6">12:00</li>
-                            <li class="w-1/4 flex justify-center items-center rounded-xl bg-blue-200 mx-1 text-xs h-6">12:00</li>
-                            <li class="w-1/4 flex justify-center items-center rounded-xl bg-blue-200 mx-1 text-xs h-6">12:00</li>
+                            <li class="w-1/4 flex justify-center items-center rounded-xl bg-blue-200 mx-1 text-xs h-6 cursor-pointer">12:00</li>
+                            <li class="w-1/4 flex justify-center items-center rounded-xl bg-blue-200 mx-1 text-xs h-6 cursor-pointer">12:00</li>
+                            <li class="w-1/4 flex justify-center items-center rounded-xl bg-blue-200 mx-1 text-xs h-6 cursor-pointer">12:00</li>
+                            <li class="w-1/4 flex justify-center items-center rounded-xl bg-blue-200 mx-1 text-xs h-6 cursor-pointer">12:00</li>
 
                         </ul>
 
@@ -54,7 +54,7 @@ import card from "../img/card.jpeg"
                             {price && <div class="text-xs w-full text-center"> 500 р на причале </div>}
                         </div>
 
-                        <div class="w-3/4 flex justify-center items-center"> <div class=" bg-yellow-400 rounded-xl text-sm h-11 w-48 flex justify-center items-center"> Подробнее </div> </div>
+                        <div class="w-3/4 flex justify-center items-center"> <div class=" bg-yellow-400 rounded-xl text-sm h-11 w-48 flex justify-center items-center cursor-pointer"> Подробнее </div> </div>
 
                     </div>
                 </div>
