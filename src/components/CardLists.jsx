@@ -9,7 +9,7 @@ import Card from "./Card";
 
         return (
 
-            Clist.map(el => <Card key={el.id} opt={el.opt} />)
+            Clist.map(el => <Card key={el.id} opt={el.opt} price={el.price} />)
 
         )
 

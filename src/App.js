@@ -7,17 +7,20 @@ function App() {
   const [list, setList] = useState([{
 
     id: 1,
-    opt: "Новинка"
+    opt: "Новинка",
+    price: 'full'
 
   }, {
 
     id: 2,
-    opt: "Круглый год"
+    opt: "Круглый год",
+    price: 'full'
 
   }, {
 
     id:3,
-    opt: ""
+    opt: "",
+    price: ''
 
   }])
 

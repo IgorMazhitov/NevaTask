@@ -1,13 +1,12 @@
 import React from "react";
 import card from "../img/card.jpeg"
-import timeIc from "file:///Users/igormazhitov/Downloads/time-svgrepo-com.svg"
 
     const Card = (props) => {
 
         const opt = props.opt
+        const price = props.price
 
         const cardImg = require("../img/card.jpeg")
-        const icon = require("file:///Users/igormazhitov/Downloads/time-svgrepo-com.svg")
 
         return (
 
@@ -50,9 +49,9 @@ import timeIc from "file:///Users/igormazhitov/Downloads/time-svgrepo-com.svg"
 
                     <div class=" h-12 my-2 w-full flex flex-row justify-start items-center">
 
-                        <div class="w-1/4 flex flex-col justify-start items-center">
-                            <div class="text-sm"> 1000 P </div>
-                            <div class="text-xs"> 500 р на причале </div>
+                        <div class="w-1/4 flex flex-col justify-center items-center">
+                            <div class="text-sm w-full text-center"> 1000 P </div>
+                            {price && <div class="text-xs w-full text-center"> 500 р на причале </div>}
                         </div>
 
                         <div class="w-3/4 flex justify-center items-center"> <div class=" bg-yellow-400 rounded-xl text-sm h-11 w-48 flex justify-center items-center"> Подробнее </div> </div>
