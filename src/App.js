@@ -6,15 +6,18 @@ function App() {
 
   const [list, setList] = useState([{
 
-    id: 1
+    id: 1,
+    opt: "Новинка"
 
   }, {
 
-    id: 2
+    id: 2,
+    opt: "Круглый год"
 
   }, {
 
-    id:3
+    id:3,
+    opt: ""
 
   }])
 

@@ -3,13 +3,16 @@ import card from "../img/card.jpeg"
 
     const Card = (props) => {
 
+        const opt = props.opt
+
         const cardImg = require("../img/card.jpeg")
 
         return (
 
             <div class=" min-w-80 mx-5 my-10 bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
                 <div class="md:flex">
-                <div class="md:shrink-0">
+                <div class="md:shrink-0 relative">
+                    {opt && <div class="absolute top-12 left-0 w-32 h-10 flex justify-center items-center bg-yellow-300 rounded-r-lg test-lg"> {opt} </div>}
                     <img class="h-48 w-full object-cover md:h-full md:w-48" src={cardImg} alt="Modern building architecture"></img>
                 </div>
                 <div class="p-8 h-auto">
