@@ -1,11 +1,13 @@
 import React from "react";
 import card from "../img/card.jpeg"
+import timeIc from "file:///Users/igormazhitov/Downloads/time-svgrepo-com.svg"
 
     const Card = (props) => {
 
         const opt = props.opt
 
         const cardImg = require("../img/card.jpeg")
+        const icon = require("file:///Users/igormazhitov/Downloads/time-svgrepo-com.svg")
 
         return (
 
@@ -16,7 +18,12 @@ import card from "../img/card.jpeg"
                     <img class="h-48 w-full object-cover md:h-full md:w-48" src={cardImg} alt="Modern building architecture"></img>
                 </div>
                 <div class="p-8 h-auto">
-                    <div class="tracking-wide text-xs text-slate-400 font-semibold">2 часа</div>
+                    <div class="tracking-wide text-xs text-slate-400 font-semibold flex flex-row"> 
+                        <svg class="svg-icon w-4 h-4 mr-2" viewBox="0 0 20 20">
+							<path d="M10.25,2.375c-4.212,0-7.625,3.413-7.625,7.625s3.413,7.625,7.625,7.625s7.625-3.413,7.625-7.625S14.462,2.375,10.25,2.375M10.651,16.811v-0.403c0-0.221-0.181-0.401-0.401-0.401s-0.401,0.181-0.401,0.401v0.403c-3.443-0.201-6.208-2.966-6.409-6.409h0.404c0.22,0,0.401-0.181,0.401-0.401S4.063,9.599,3.843,9.599H3.439C3.64,6.155,6.405,3.391,9.849,3.19v0.403c0,0.22,0.181,0.401,0.401,0.401s0.401-0.181,0.401-0.401V3.19c3.443,0.201,6.208,2.965,6.409,6.409h-0.404c-0.22,0-0.4,0.181-0.4,0.401s0.181,0.401,0.4,0.401h0.404C16.859,13.845,14.095,16.609,10.651,16.811 M12.662,12.412c-0.156,0.156-0.409,0.159-0.568,0l-2.127-2.129C9.986,10.302,9.849,10.192,9.849,10V5.184c0-0.221,0.181-0.401,0.401-0.401s0.401,0.181,0.401,0.401v4.651l2.011,2.008C12.818,12.001,12.818,12.256,12.662,12.412"></path>
+						</svg> 
+                        2 часа
+                        </div>
                     <a href="#" class="block mt-1 text-sm leading-tight font-medium text-black hover:underline">АКЦИЯ - Обзорная экскурсия по рекам и каналам  с остановками Hop on Hop Off 2019</a>
                     <div class=" text-sm ">
 
